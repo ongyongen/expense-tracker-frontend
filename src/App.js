@@ -1,35 +1,25 @@
-import Test from './Test';
-import styled from 'styled-components'
+import CategoryForm from './features/CategoryForm/CategoryForm';
+import styled, { createGlobalStyle } from 'styled-components'
+import Header from './components/Header';
+import ExpenseForm from './features/ExpenseForm/ExpenseForm';
 
 function App() {
   return (
-    <Page>
-        <div>
-          <header>
-            <p>hello world</p>
-            <Test/>
-          </header>
-          <Footer>Footer</Footer>
-    </div>
-
-    </Page>
+    <GlobalStyle>
+      <Page>
+        <Header/>
+        {/* <CategoryForm/> */}
+        <ExpenseForm/>
+      </Page>
+    </GlobalStyle>
   );
 }
 
+const GlobalStyle = styled.html`
+  font-family: 'Josefin Sans', sans-serif;
+`
 const Page = styled.div`
-  padding: 1em;
-  background: papayawhip;
-`
-
-const Navigation = styled.div`
-  background: BurlyWood;
-  padding: 1em;
-`
-
-const Footer = styled.div`
-  background: Chocolate;
-  padding: 1em;
-  margin-top: 1em;
+  margin: 3em 15em 3em 15em;
 `
 
 export default App;
