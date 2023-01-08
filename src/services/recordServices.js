@@ -21,4 +21,9 @@ const deleteRecord = (id) => {
     return request.then(response => response.data)
 }
 
-export default { getAllRecords, createNewRecord, updateRecord, deleteRecord }
+const getAllRecordsWithinDateRange = (startDate, endDate) => {
+    const request = axios.get(`${baseUrl}/find_by_date/${startDate}&${endDate}`)
+    return request.then(response => response.data)
+}
+
+export default { getAllRecords, createNewRecord, updateRecord, deleteRecord, getAllRecordsWithinDateRange }
