@@ -1,4 +1,4 @@
-import { useFetchExpenseRecord } from "./expenseFormHooks";
+import { useExpenseForm } from "./expenseFormHooks";
 import SubmitButton from "../../components/SubmitButton"
 import TextInput from "../../components/TextInput";
 import styled from "styled-components";
@@ -11,7 +11,7 @@ import ErrorMessage from "../../components/ErrorMessage/ErrorMessage";
 
 const ExpenseForm = () => {
 
-    const [name, price, category, data, error, loading, success, {recordName, recordPrice, recordCategory, createExpenseRecord} ] = useFetchExpenseRecord();
+    const [name, price, category, data, error, loading, success, {recordName, recordPrice, recordCategory, createExpenseRecord} ] = useExpenseForm();
 
     const [catData, catError, catLoading, {getAll}] = useFetchCategory()
     

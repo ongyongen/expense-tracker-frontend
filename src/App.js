@@ -1,15 +1,14 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
-import ExpenseCreate from './pages/ExpenseCreate';
+import ExpenseTablePage from './pages/ExpenseTablePage';
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<ExpenseCreate />} />
+        <Route path="/" element={<ExpenseTablePage />} />
       </Routes>
     </BrowserRouter>
-    
   );
 }
 

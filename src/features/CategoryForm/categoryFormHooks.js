@@ -1,7 +1,7 @@
 import categoryServices from "../../services/categoryServices"
 import { useState, useMemo } from "react"
 
-export const useFetchCategory = () => {
+export const useCategoryForm = () => {
     const [name, setName] = useState("")
     const [data, setData] = useState(null)
     const [error, setError] = useState(null)
