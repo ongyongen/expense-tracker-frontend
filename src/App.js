@@ -1,27 +1,15 @@
-import CategoryForm from './features/CategoryForm/CategoryForm';
-import styled, { createGlobalStyle } from 'styled-components'
-import Header from './components/Header';
-import ExpenseForm from './features/ExpenseForm/ExpenseForm';
-import ExpenseTable from './features/ExpenseTable/ExpenseTable';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+
+import ExpenseTablePage from './pages/ExpenseTablePage';
 
 function App() {
   return (
-    <GlobalStyle>
-      <Page>
-        <Header/>
-        {/* <CategoryForm/> */}
-        {/* <ExpenseForm/> */}
-        <ExpenseTable/>
-      </Page>
-    </GlobalStyle>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<ExpenseTablePage />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
-
-const GlobalStyle = styled.html`
-  font-family: 'Josefin Sans', sans-serif;
-`
-const Page = styled.div`
-  margin: 3em 15em 3em 15em;
-`
 
 export default App;

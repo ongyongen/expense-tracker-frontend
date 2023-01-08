@@ -3,9 +3,10 @@ import styled from 'styled-components'
 const Header = () => {
     return (
         <HeaderContainer>
-            <HeaderText>Log Expenses</HeaderText>
-            <HeaderText>Challenges</HeaderText>
-            <HeaderText>Profile</HeaderText>
+            <HeaderLink>Log Expenses</HeaderLink>
+            <HeaderLink>Challenges</HeaderLink>
+            <HeaderLink>Profile</HeaderLink>
+            <HeaderLink href="/login">Log In</HeaderLink>
         </HeaderContainer>
 
     )
@@ -17,7 +18,8 @@ const HeaderContainer = styled.div`
     align-items:center;
     justify-content:flex-start;
 `
-const HeaderText = styled.p`
+const HeaderLink = styled.a`
+    text-decoration: none;
     font-size: 1em;
     padding: 1em 2.5em 1em 0em;
 `
