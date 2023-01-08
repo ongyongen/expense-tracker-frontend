@@ -1,11 +1,11 @@
-import { useFetchCategory } from "./categoryFormHooks"
+import { useCategoryForm } from "./categoryFormHooks";
 import SubmitButton from "../../components/SubmitButton"
 import TextInput from "../../components/TextInput";
 import styled from "styled-components";
 import Title from "../../components/Title";
 
 const CategoryForm = () => {
-    const [name, data, error, loading, {recordCategoryName, createCategory} ] = useFetchCategory();
+    const [name, data, error, loading, {recordCategoryName, createCategory} ] = useCategoryForm();
 
     return (
         <FormContainer>

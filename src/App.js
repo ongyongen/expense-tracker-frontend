@@ -2,6 +2,7 @@ import CategoryForm from './features/CategoryForm/CategoryForm';
 import styled, { createGlobalStyle } from 'styled-components'
 import Header from './components/Header';
 import ExpenseForm from './features/ExpenseForm/ExpenseForm';
+import ExpenseTable from './features/ExpenseTable/ExpenseTable';
 
 function App() {
   return (
@@ -9,7 +10,8 @@ function App() {
       <Page>
         <Header/>
         {/* <CategoryForm/> */}
-        <ExpenseForm/>
+        {/* <ExpenseForm/> */}
+        <ExpenseTable/>
       </Page>
     </GlobalStyle>
   );

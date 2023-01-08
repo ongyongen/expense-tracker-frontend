@@ -1,7 +1,7 @@
 import recordServices from "../../services/recordServices"
 import { useState, useMemo } from "react"
 
-export const useFetchExpenseRecord = () => {
+export const useExpenseForm = () => {
     const [name, setName] = useState("")
     const [price, setPrice] = useState("")
     const [category, setCategory] = useState("")
