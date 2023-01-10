@@ -6,7 +6,7 @@ const Header = () => {
             <HeaderLink>Log Expenses</HeaderLink>
             <HeaderLink>Challenges</HeaderLink>
             <HeaderLink>Profile</HeaderLink>
-            <HeaderLink href="/login">Log In</HeaderLink>
+            <HeaderLink href="/user/login">Log In</HeaderLink>
         </HeaderContainer>
 
     )
